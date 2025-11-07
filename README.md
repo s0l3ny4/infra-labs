@@ -101,41 +101,6 @@ Cada pasta contém um **README.md** com:
 
 ---
 
-## 📘 Template de README para área (exemplo: redes/README.md)
-
-```markdown
-# 🌐 Redes
-
-Projetos práticos relacionados à **infraestrutura de rede**, cobrindo:
-- Topologias LAN/WAN
-- VLANs e roteamento
-- VPN site-to-site e client-to-site
-- Serviços DNS, DHCP, Active Directory
-- Regras de negócio (endereçamento, políticas de acesso)
-
----
-
-## 📚 Projetos
-
-| Projeto | Descrição | Tecnologias |
-|----------|------------|--------------|
-| [Topologia LAN](./topologia-lan) | Montagem de rede local com VLANs e DHCP | pfSense, Linux, Cisco Packet Tracer |
-| [VPN Site-to-Site](./vpn-site-to-site) | Conexão segura entre duas redes | pfSense, IPsec |
-| [DNS + DHCP + AD](./dns-dhcp-ad) | Laboratório de diretório e resolução de nomes | Windows Server, Bind9 |
-```
-
----
-
-## 📘 Template de README de projeto individual (exemplo: redes/vpn-site-to-site/README.md)
-
-```markdown
-# 🔐 Projeto: VPN Site-to-Site com pfSense
-
-## 🎯 Objetivo
-Criar uma VPN **Site-to-Site** entre duas redes simuladas utilizando **pfSense**, garantindo conectividade segura entre filiais.
-
----
-
 ## 🧱 Topologia
 
 ```mermaid
