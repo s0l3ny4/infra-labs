@@ -1,3 +1,14 @@
+# 🧱 Infra Lab — Laboratório de Infraestrutura de TI
+
+Bem-vindo ao **Infra Lab**, um portfólio técnico e prático de projetos em **infraestrutura, redes, servidores, automação e segurança**.
+
+O objetivo é **construir e documentar ambientes reais**, aplicando **boas práticas, automação e regras de negócio** do mundo corporativo.
+
+---
+
+## 📂 Estrutura do projeto
+
+```
 infra-lab/
 │
 ├── README.md
@@ -55,3 +66,152 @@ infra-lab/
     │   └── README.md
     └── analise-logs/
         └── README.md
+```
+
+---
+
+## 🎯 Objetivos
+
+- Consolidar fundamentos de infraestrutura (rede, SO, automação)
+- Praticar **Infraestrutura como Código (IaC)**
+- Criar **documentação técnica completa**
+- Aplicar **regras de negócio reais**
+- Manter um **portfólio profissional e versionado**
+
+---
+
+## 🧩 Ferramentas recomendadas
+
+- **VirtualBox / VMware Workstation** — para criar os ambientes
+- **VS Code + Git** — para versionar e editar
+- **Docker Desktop / WSL2** — para simulações rápidas
+- **Ansible / Terraform** — para automação e IaC
+- **Draw.io / Mermaid** — para diagramas
+
+---
+
+## 🚀 Como usar
+
+Cada pasta contém um **README.md** com:
+- Descrição do laboratório
+- Diagrama de rede
+- Passos de instalação/configuração
+- Regras de negócio
+- Resultados esperados
+
+---
+
+## 📘 Template de README para área (exemplo: redes/README.md)
+
+```markdown
+# 🌐 Redes
+
+Projetos práticos relacionados à **infraestrutura de rede**, cobrindo:
+- Topologias LAN/WAN
+- VLANs e roteamento
+- VPN site-to-site e client-to-site
+- Serviços DNS, DHCP, Active Directory
+- Regras de negócio (endereçamento, políticas de acesso)
+
+---
+
+## 📚 Projetos
+
+| Projeto | Descrição | Tecnologias |
+|----------|------------|--------------|
+| [Topologia LAN](./topologia-lan) | Montagem de rede local com VLANs e DHCP | pfSense, Linux, Cisco Packet Tracer |
+| [VPN Site-to-Site](./vpn-site-to-site) | Conexão segura entre duas redes | pfSense, IPsec |
+| [DNS + DHCP + AD](./dns-dhcp-ad) | Laboratório de diretório e resolução de nomes | Windows Server, Bind9 |
+```
+
+---
+
+## 📘 Template de README de projeto individual (exemplo: redes/vpn-site-to-site/README.md)
+
+```markdown
+# 🔐 Projeto: VPN Site-to-Site com pfSense
+
+## 🎯 Objetivo
+Criar uma VPN **Site-to-Site** entre duas redes simuladas utilizando **pfSense**, garantindo conectividade segura entre filiais.
+
+---
+
+## 🧱 Topologia
+
+```mermaid
+graph LR
+A[LAN Filial A<br>192.168.10.0/24] --VPN--> B[LAN Filial B<br>192.168.20.0/24]
+A -->|pfSense| FW1
+B -->|pfSense| FW2
+```
+
+---
+
+## ⚙️ Passos principais
+1. Configurar IPs e rotas em cada lado.
+2. Criar as regras de firewall no pfSense.
+3. Configurar o túnel IPsec (fase 1 e 2).
+4. Testar conectividade (ping, SSH, compartilhamentos).
+
+---
+
+## 📋 Regras de negócio
+- Criptografia: AES-256
+- Autenticação: Pre-shared key
+- Disponibilidade: redundância de link simulada
+- Retenção de logs: 30 dias
+
+---
+
+## 🧠 Conceitos aplicados
+- VPN IPsec
+- Tunelamento e encapsulamento
+- Firewall rules
+- Log e auditoria de tráfego
+
+---
+
+## ✅ Resultado esperado
+- Comunicação entre hosts das duas LANs.
+- Logs registrados de conexões.
+- Gráfico de throughput no pfSense.
+
+---
+
+## 📎 Referências
+- [Documentação pfSense VPN](https://docs.netgate.com/pfsense/en/latest/vpn/)
+```
+
+---
+
+## 📘 Template genérico para qualquer subprojeto
+
+```markdown
+# 💡 Projeto: [Nome do Projeto]
+
+## 🎯 Objetivo
+Breve explicação do propósito e o que se deseja alcançar.
+
+## 🔧 Tecnologias utilizadas
+Liste sistemas operacionais, ferramentas, linguagens e protocolos.
+
+## 🧱 Topologia / Arquitetura
+(Use diagramas com Mermaid ou imagens do Draw.io)
+
+## ⚙️ Passos de configuração
+1. Passo 1
+2. Passo 2
+3. Passo 3
+
+## 🧩 Regras de negócio
+- Política de backup
+- Disponibilidade mínima
+- Controle de acesso
+- Retenção de logs
+
+## ✅ Resultado esperado
+O que deve funcionar no final (prints, ping, dashboards etc.)
+
+## 📎 Referências
+Links úteis, documentação e tutoriais.
+```
