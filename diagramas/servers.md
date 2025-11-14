@@ -244,19 +244,6 @@ Regras mínimas:
   dns_zones.conf
 ```
 
----
-
-## 🔵 13. Arquivos sugeridos para continuar o projeto
-
-- **Inventário de Rede**  
-- **Plano de VLANs completo**  
-- **Naming Convention corporativa**  
-- **Playbooks Ansible**  
-- **Guia de PXE com imagens personalizadas**  
-- **Checklist de Hardening**  
-- **Runbooks de manutenção e incidentes**  
-
----
-
 ## Fim do documento
 Versão: v2 — Infraestrutura Expandida
+
